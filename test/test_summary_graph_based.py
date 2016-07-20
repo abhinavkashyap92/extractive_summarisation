@@ -1,7 +1,7 @@
 import pytest
 import numpy as np
-from epicure.extractive_caption_summarization.yelp_word2Vec.summarization.summary_graph_based import *
-from epicure.extractive_caption_summarization.yelp_word2Vec.summarization.sub_modular_functions import *
+from src.summary_graph_based import *
+from src.sub_modular_functions import *
 @pytest.fixture(scope="module")
 def similarity_matrix(request):
     """

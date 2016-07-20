@@ -1,7 +1,7 @@
 import random
 import numpy as np
 import pytest
-from epicure.extractive_caption_summarization.yelp_word2Vec.summarization.sub_modular_functions import *
+from src.sub_modular_functions import *
 
 NUM_SENTENCES = 3
 
@@ -119,4 +119,3 @@ class TestSubmodularFunctions():
         config = {'membership':[[0,1], [2]]}
         value = diversity_function(vocab_indices, summary_contains_first_third, similarity_matrix, config)
         assert value == np.sqrt(2./3) + np.sqrt(2.4/3)
-

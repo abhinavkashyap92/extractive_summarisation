@@ -5,8 +5,8 @@ by Hui Lin Jeff Bilmes and Shasha Xie 2009
 """
 import copy
 import numpy as np
-from epicure.extractive_caption_summarization.sentence_similarity import SentenceSimilarity
-from epicure.extractive_caption_summarization.yelp_word2Vec.summarization.sub_modular_functions import *
+from sentence_similarity import SentenceSimilarity
+from sub_modular_functions import *
 class GraphBasedSummarization():
     """
     This implements the graph based extractive summarization
@@ -105,4 +105,3 @@ class GraphBasedSummarization():
             print "Percentage complete %f" % ((100) * (len(summary)/float(self.budget)),)
         print "*" * 80
         return list(summary)
-
